@@ -1,0 +1,11 @@
+{% if men_list %}
+    <ul>
+    {% for man in men_list %}
+        <li>{{ man.name }}</li>
+        <span>{{ man.xp }}</span>
+        <span>{{ man.armor }}</span>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
